@@ -18,8 +18,8 @@
  </tr>
  <?php
  include '../../../config/conexionBD.php'; 
- $correo = isset($_POST["correo"]) ? trim($_POST["correo"]): null;
- $sql = "SELECT * FROM usuario ";
+ $codigo = $_GET["codigo"];     
+ $sql = "SELECT * FROM usuario WHERE usu_codigo='$codigo' ";
  $result = $conn->query($sql);
  if ($result->num_rows > 0) {
 
@@ -35,7 +35,8 @@ while($row = $result->fetch_assoc()) {
  echo "   <td> <a href='eliminar.php?codigo=" . $row['usu_codigo'] . "'>Eliminar</a> </td>";  
  echo "   <td> <a href='modificar.php?codigo=" . $row['usu_codigo'] . "'>Modificar</a> </td>";   
  echo "   <td> <a href='cambiar_contrasena.php?codigo=" . $row['usu_codigo'] . 
- "'>Cambiar contraseña</a> </td>"; 
+ "'>Cambiar contraseña</a> </td>";  
+ echo "  <td> <a href='../../../public/vista/reunion.html '>Crear Reunion</a> </td>";   
  echo "</tr>";
  }
  } else {
@@ -46,5 +47,45 @@ while($row = $result->fetch_assoc()) {
  $conn->close();
  ?>
  </table>
+
+ <table>
+ <table style="width:100%">
+ <tr>
+ <th>Fecha</th>
+ <th>Hora</th>
+ <th>Lugar</th>
+ <th>Latitud</th>
+ <th>Longitud</th>
+ <th>Motivo</th>
+ <th>Observaciones</th>
+ </tr>
+ <?php
+ include '../../../config/conexionBD.php';
+ $sql = "SELECT * FROM reuniones ";
+ $result = $conn->query($sql);
+
+ if ($result->num_rows > 0) {
+
+ while($row = $result->fetch_assoc()) {
+ echo "<tr>";
+ echo " <td>" . $row['reu_fecha'] ."</td>";
+ echo " <td>" . $row['reu_hora'] . "</td>";
+ echo " <td>" . $row['reu_lugar'] . "</td>";
+ echo " <td>" . $row['reu_latitud'] . "</td>";
+ echo " <td>" . $row['reu_longitud'] . "</td>";
+ echo " <td>" . $row['reu_motivo'] . "</td>"; 
+ echo " <td>" . $row['reu_observaciones'] . "</td>";  
+ echo "   <td> <a href='eliminarr.php?codigo=" . $row['reu_id'] . "'>Eliminar</a> </td>";  
+ echo "   <td> <a href='modificarr.php?codigo=" . $row['reu_id'] . "'>Modificar</a> </td>";    
+ echo "</tr>";
+ }
+ } else {
+ echo "<tr>";
+ echo " <td colspan='8'> No existen usuarios registradas en el sistema </td>";
+ echo "</tr>";
+ }
+ $conn->close();
+ ?>
+</table>
 </body>
 </html>
