@@ -12,10 +12,10 @@
         $_SESSION['isLogged'] = TRUE;  
         while($row = $result->fetch_assoc()) {
           if($row["rol"]=="administrador"){
-            header("Location: ../../admin/vista/usuario/index.php");  
+            header("Location: ../../admin/vista/usuario/index.php");        
 
             }else {
-            header("Location: ../../admin/vista/usuario/usuario.php");  
+            header("Location: ../../admin/vista/usuario/usuario.php?codigo=".$row['usu_codigo']);  
             echo"dhfjgdf";
         }
         }
