@@ -23,7 +23,7 @@
 
  if ($result->num_rows > 0) {
 
- while($row = $result->fetch_assoc()) {
+ while($row = $result->fetch_assoc()) {//for each 01 & para concatenar y pasar paremetros en el url
  echo "<tr>";
  echo " <td>" . $row["usu_cedula"] . "</td>";
  echo " <td>" . $row['usu_nombre'] ."</td>";
@@ -44,7 +44,9 @@
  echo "</tr>";
  }
  $conn->close();
- ?>
+ ?> 
+ </table>
+ <table>
  </table>
  <table>
  <table style="width:100%">
@@ -59,7 +61,7 @@
  </tr>
  <?php
  include '../../../config/conexionBD.php';
- $sql = "SELECT * FROM reuniones ";
+ $sql = "SELECT * FROM reuniones ORDER BY reu_fecha DESC ";
  $result = $conn->query($sql);
 
  if ($result->num_rows > 0) {
@@ -72,11 +74,7 @@
  echo " <td>" . $row['reu_latitud'] . "</td>";
  echo " <td>" . $row['reu_longitud'] . "</td>";
  echo " <td>" . $row['reu_motivo'] . "</td>"; 
- echo " <td>" . $row['reu_observaciones'] . "</td>";
- echo "   <td> <a href='eliminar.php?codigo=" . $row['reu_id'] . "'>Eliminar</a> </td>";  
- echo "   <td> <a href='modificar.php?codigo=" . $row['reu_id'] . "'>Modificar</a> </td>";   
- echo "   <td> <a href='cambiar_contrasena.php?codigo=" . $row['reu_id'] . 
- "'>Cambiar contraseña</a> </td>"; 
+ echo " <td>" . $row['reu_observaciones'] . "</td>"; 
  echo "</tr>";
  }
  } else {
@@ -85,9 +83,7 @@
  echo "</tr>";
  }
  $conn->close();
- ?>
- </table>
-
+ ?> 
  </table>
 </body>
 </html>
