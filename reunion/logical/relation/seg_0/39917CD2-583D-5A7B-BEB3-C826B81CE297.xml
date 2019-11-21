@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="usu_invi" directorySegmentName="seg_0" id="39917CD2-583D-5A7B-BEB3-C826B81CE297">
+<createdBy>CINTHIA</createdBy>
+<createdTime>2019-11-20 19:57:44 UTC</createdTime>
+<ownerDesignName>reunion</ownerDesignName>
+<sourcePk>0A5CFAE7-B8AB-0187-603C-464E035EE8C1</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>89489592-33FE-C01A-C97A-612F44EF8924</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>BB5037DF-4E60-D85B-E286-FF53BAF99D8F</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="89489592-33FE-C01A-C97A-612F44EF8924" name="USUARIO">
+<createdBy>CINTHIA</createdBy>
+<createdTime>2019-11-20 02:19:52 UTC</createdTime>
+<ownerDesignName>reunion</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="usu_id" id="913E6C6E-6AEC-98F9-1627-8EAFF7B9A54B">
+<createdBy>CINTHIA</createdBy>
+<createdTime>2019-11-20 02:20:01 UTC</createdTime>
+<ownerDesignName>reunion</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="usu_nombres" id="E45E9217-0C52-A45B-B86B-68A6B5480D01">
+<createdBy>CINTHIA</createdBy>
+<createdTime>2019-11-20 02:20:18 UTC</createdTime>
+<ownerDesignName>reunion</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="usu_apellidos" id="36CC3FC6-A5D6-BE57-8847-ACDE274F6B33">
+<createdBy>CINTHIA</createdBy>
+<createdTime>2019-11-20 02:20:32 UTC</createdTime>
+<ownerDesignName>reunion</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="usu_direccion" id="97108891-D9AC-5C7A-2D91-402F8003D1BE">
+<createdBy>CINTHIA</createdBy>
+<createdTime>2019-11-20 02:20:48 UTC</createdTime>
+<ownerDesignName>reunion</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="usu_telefono" id="F70827B5-A051-8FCA-99D8-45CBCE91718D">
+<createdBy>CINTHIA</createdBy>
+<createdTime>2019-11-20 02:21:02 UTC</createdTime>
+<ownerDesignName>reunion</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="usu_correo" id="3B397728-B8EC-86C4-0AC6-8C1FA39BF659">
+<createdBy>CINTHIA</createdBy>
+<createdTime>2019-11-20 02:21:16 UTC</createdTime>
+<ownerDesignName>reunion</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="usu_contrasena" id="20BC71A8-CFAD-293A-B28D-BF1557314D18">
+<createdBy>CINTHIA</createdBy>
+<createdTime>2019-11-20 02:21:27 UTC</createdTime>
+<ownerDesignName>reunion</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="usu_fecha_nacimiento" id="5724D805-6387-2EBA-83EB-034CCCF437E2">
+<createdBy>CINTHIA</createdBy>
+<createdTime>2019-11-20 02:22:34 UTC</createdTime>
+<ownerDesignName>reunion</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rol" id="3BC58522-2B8D-303C-6930-FFF254481649">
+<createdBy>CINTHIA</createdBy>
+<createdTime>2019-11-20 19:17:17 UTC</createdTime>
+<ownerDesignName>reunion</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0A5CFAE7-B8AB-0187-603C-464E035EE8C1" name="USUARIO PK">
+<createdBy>CINTHIA</createdBy>
+<createdTime>2019-11-20 02:20:17 UTC</createdTime>
+<ownerDesignName>reunion</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>913E6C6E-6AEC-98F9-1627-8EAFF7B9A54B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

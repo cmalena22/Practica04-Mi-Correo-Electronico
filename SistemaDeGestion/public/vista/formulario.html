@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    
+</head>
+<body>
+
+    <form id="formulario01" method="POST" action=" ../controladores/crear_usuario.php" >
+          
+        <label for="cedula">Cedula (*)</label>
+        <input type="text" maxlength="10" id="cedula" name="cedula" value="" placeholder="Ingrese el número de cedula ..." />
+        <span id="mensajeCedula" class="error"></span>        
+        <br>
+
+        <label for="nombres">Nombres (*)</label>
+        <input type="text" id="nombre" name="nombre" value="" placeholder="Ingrese sus dos nombres ..."
+       />
+        <br>
+
+        <label for="apellidos">Apelidos (*)</label>
+        <input type="text" id="apellidos" name="apellidos" value="" placeholder="Ingrese sus dos apellidos ..." 
+       />
+        <br>
+
+        <label for="direccion">Dirección (*)</label>
+        <input type="text" id="direccion" name="direccion" value="" placeholder="Ingrese su dirección ..." 
+       />
+        <br>
+
+        <label for="telefono">Teléfono (*)</label>
+        <input type="text" maxlength="10" id="telefono" name="telefono" value=""  placeholder="Ingrese su número telefónico ..." 
+        />
+        <br>                
+
+        <label for="fecha">Fecha Nacimiento (*)</label>
+        <input type="text" id="fechaNacimiento" name="fechaNacimiento" value="" placeholder="dd/mm/yyyy"
+       />
+
+        <spam id="f" style="display: none;">ERROR</spam>
+        <br>	
+
+        <label for="correo">Correo electrónico (*)</label>
+        <input type="email" id="correo" name="correo"  placeholder="Ingrese su correo electrónico ..."
+       />
+        <br>
+
+        <label for="correo">Contraseña (*)</label>
+        <input type="password" id="contrasena" name="contrasena" value="" placeholder="Ingrese su contraseña ..." />
+        <br>
+
+        <input type="submit" id="crear" name="crear" value="Aceptar" />
+        <input type="reset" id="cancelar" name="cancelar" value="Cancelar" />
+    </form> 
+ 
+
+</body>
+</html>
+

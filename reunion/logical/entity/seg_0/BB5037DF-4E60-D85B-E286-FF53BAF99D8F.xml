@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BB5037DF-4E60-D85B-E286-FF53BAF99D8F" name="INVITADOS">
+<createdBy>CINTHIA</createdBy>
+<createdTime>2019-11-20 19:54:53 UTC</createdTime>
+<ownerDesignName>reunion</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_invit" id="DA549AF9-2015-0DDF-AF93-B97FB7AA7250">
+<createdBy>CINTHIA</createdBy>
+<createdTime>2019-11-20 19:56:28 UTC</createdTime>
+<ownerDesignName>reunion</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="usu_id" id="D5D45C41-1FA7-438F-5E94-28C8FBC6E7F7">
+<createdBy>CINTHIA</createdBy>
+<createdTime>2019-11-20 19:57:44 UTC</createdTime>
+<generatorID>39917CD2-583D-5A7B-BEB3-C826B81CE297</generatorID>
+<ownerDesignName>reunion</ownerDesignName>
+<referedAttribute>913E6C6E-6AEC-98F9-1627-8EAFF7B9A54B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="555F0F90-4DD8-4C4D-398F-EED2A742433E" name="INVITADOS PK">
+<createdBy>CINTHIA</createdBy>
+<createdTime>2019-11-20 19:56:40 UTC</createdTime>
+<ownerDesignName>reunion</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DA549AF9-2015-0DDF-AF93-B97FB7AA7250</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

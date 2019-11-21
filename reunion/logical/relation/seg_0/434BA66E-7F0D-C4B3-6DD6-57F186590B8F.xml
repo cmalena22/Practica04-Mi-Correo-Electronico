@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="cli_reu_clireu" directorySegmentName="seg_0" id="434BA66E-7F0D-C4B3-6DD6-57F186590B8F">
+<createdBy>CINTHIA</createdBy>
+<createdTime>2019-11-20 19:53:19 UTC</createdTime>
+<ownerDesignName>reunion</ownerDesignName>
+<sourcePk>A28B81D9-F7C5-4F9B-2083-60FF1D3D0227</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>023879FC-B57B-7F04-1918-742023A40E32</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>69A3694E-9AAC-4F0C-059B-B1559F689653</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

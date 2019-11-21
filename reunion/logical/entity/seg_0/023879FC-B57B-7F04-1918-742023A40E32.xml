@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="023879FC-B57B-7F04-1918-742023A40E32" name="REUNIONES">
+<createdBy>CINTHIA</createdBy>
+<createdTime>2019-11-20 01:54:48 UTC</createdTime>
+<ownerDesignName>reunion</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="reu_id" id="AF61C740-075E-2FA3-B8B1-93E561F5695E">
+<createdBy>CINTHIA</createdBy>
+<createdTime>2019-11-20 01:54:59 UTC</createdTime>
+<ownerDesignName>reunion</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="reu_fecha" id="530F4CE9-A799-FBB2-ABC5-0CF238567BC9">
+<createdBy>CINTHIA</createdBy>
+<createdTime>2019-11-20 01:55:20 UTC</createdTime>
+<ownerDesignName>reunion</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="reu_hora" id="DCD6B2A7-72A5-ACBF-B448-27C590441A33">
+<createdBy>CINTHIA</createdBy>
+<createdTime>2019-11-20 01:55:39 UTC</createdTime>
+<ownerDesignName>reunion</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="reu_lugar" id="136D5171-B850-C8BF-2152-E8D5569DA6A5">
+<createdBy>CINTHIA</createdBy>
+<createdTime>2019-11-20 01:55:57 UTC</createdTime>
+<ownerDesignName>reunion</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="reu_latitud" id="5183C304-F890-7E34-5FE2-098522E60A7B">
+<createdBy>CINTHIA</createdBy>
+<createdTime>2019-11-20 01:56:08 UTC</createdTime>
+<ownerDesignName>reunion</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="reu_longitud" id="1E1C304E-8691-AD01-756E-BAB00CA56430">
+<createdBy>CINTHIA</createdBy>
+<createdTime>2019-11-20 01:56:26 UTC</createdTime>
+<ownerDesignName>reunion</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="reu_motivo" id="17F6BD8D-E0B9-272F-3008-C40AA26A4460">
+<createdBy>CINTHIA</createdBy>
+<createdTime>2019-11-20 01:56:45 UTC</createdTime>
+<ownerDesignName>reunion</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="reu_observaciones" id="36F4B496-3787-E054-843C-F4EBF3BC0E0A">
+<createdBy>CINTHIA</createdBy>
+<createdTime>2019-11-20 01:56:57 UTC</createdTime>
+<ownerDesignName>reunion</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A28B81D9-F7C5-4F9B-2083-60FF1D3D0227" name="REUNIONES PK">
+<createdBy>CINTHIA</createdBy>
+<createdTime>2019-11-20 01:55:10 UTC</createdTime>
+<ownerDesignName>reunion</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>AF61C740-075E-2FA3-B8B1-93E561F5695E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

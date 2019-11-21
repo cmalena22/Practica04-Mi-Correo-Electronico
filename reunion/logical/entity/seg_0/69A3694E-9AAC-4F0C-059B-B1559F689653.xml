@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="69A3694E-9AAC-4F0C-059B-B1559F689653" name="CLIE_REU">
+<createdBy>CINTHIA</createdBy>
+<createdTime>2019-11-20 19:52:59 UTC</createdTime>
+<ownerDesignName>reunion</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_clireu" id="3C63FC74-8E08-9246-BD0A-11B7A9A5DD8A">
+<createdBy>CINTHIA</createdBy>
+<createdTime>2019-11-20 19:54:03 UTC</createdTime>
+<ownerDesignName>reunion</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="reu_id" id="A35F1DF8-739A-E5E1-E830-92E115B77FC3">
+<createdBy>CINTHIA</createdBy>
+<createdTime>2019-11-20 19:53:19 UTC</createdTime>
+<generatorID>434BA66E-7F0D-C4B3-6DD6-57F186590B8F</generatorID>
+<ownerDesignName>reunion</ownerDesignName>
+<referedAttribute>AF61C740-075E-2FA3-B8B1-93E561F5695E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="usu_id" id="219AA15A-38A4-EEDB-6461-E09B3E292260">
+<createdBy>CINTHIA</createdBy>
+<createdTime>2019-11-20 19:53:47 UTC</createdTime>
+<generatorID>35632ED9-84F2-6ED5-E843-3922B2B30DB9</generatorID>
+<ownerDesignName>reunion</ownerDesignName>
+<referedAttribute>913E6C6E-6AEC-98F9-1627-8EAFF7B9A54B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B28BCC61-0A9F-F4B7-8091-1B7573ABA488" name="CLIE_REU PK">
+<createdBy>CINTHIA</createdBy>
+<createdTime>2019-11-20 19:54:16 UTC</createdTime>
+<ownerDesignName>reunion</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3C63FC74-8E08-9246-BD0A-11B7A9A5DD8A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
