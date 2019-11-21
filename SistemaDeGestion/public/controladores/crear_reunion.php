@@ -20,9 +20,7 @@
  $longitud = isset($_POST["longitud"]) ? trim($_POST["longitud"]): null;
  $motivo = isset($_POST["motivo"]) ? trim($_POST["motivo"]): null;
  $obeservacion = isset($_POST["observaciones"]) ? trim($_POST["observaciones"]) : null;
- 
-
- $sql = "INSERT INTO reuniones VALUES (0, '$fecha', '$hora', '$lugar', '$latitud', '$longitd',
+ $sql = "INSERT INTO reuniones VALUES (0, '$fecha', '$hora', '$lugar', '$latitud', '$longitud',
 '$motivo', '$obeservacion')";
  if ($conn->query($sql) === TRUE) {
  echo "<p>Se ha creado los datos de reunion correctamemte!!!</p>";
@@ -36,7 +34,7 @@
 
  //cerrar la base de datos
  $conn->close();
- echo "<a href='../../public/vista/reunion.html '>Regresar</a>";
+ echo "<a href='../../../controladores/vista/usuario/usuario.php '>Regresar</a>";
 
  ?>
 </body>
