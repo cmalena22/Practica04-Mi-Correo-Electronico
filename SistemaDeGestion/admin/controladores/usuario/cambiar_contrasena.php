@@ -1,12 +1,12 @@
 <!DOCTYPE html> 
 <html> 
-    <head>     
-        <meta charset="UTF-8">     
-        <title>Modificar datos de persona </title> 
-        </head> 
-        <body> 
-        <?php         //incluir conexión a la base de datos     
-        include '../../../config/conexionBD.php';  
+<head>     
+<meta charset="UTF-8">     
+<title>Modificar datos de persona </title> 
+</head> 
+<body> 
+<?php         //incluir conexión a la base de datos     
+include '../../../config/conexionBD.php';  
  
     $codigo = $_POST["codigo"];     
     $contrasena1 = isset($_POST["contrasena1"]) ? trim($_POST["contrasena1"]) : null;     
@@ -20,19 +20,17 @@
         $fecha = date('Y-m-d H:i:s', time()); 
  
         $sqlContrasena2 = "UPDATE usuario " .             
-        "SET usu_password = '$contrasena2' " .               
+        "SET usu_password = '$contrasena2' " .             
         "WHERE usu_codigo = $codigo"; 
  
         if ($conn->query($sqlContrasena2) === TRUE) {             
             echo "Se ha actualizado la contraseña correctamemte!!!<br>";              
         } else {                     
             echo "<p>Error: " . mysqli_error($conn) . "</p>";                 
-        }                      
-    }else{         
-        echo "<p>La contraseña actual no coincide con nuestros registros!!! </p>";                 
-    }     
-    echo "<a href='../../vista/usuario/index.php'>Regresar</a>";     
-    $conn->close();      
-?> 
-</body> 
-</html> 
+        }                     
+     }else{        
+          echo "<p>La contraseña actual no coincide con nuestros registros!!! </p>";                 
+        }     
+        echo "<a href='../../vista/usuario/index.php'>Regresar</a>";     
+        $conn->close();      
+?> </body> </html> 
