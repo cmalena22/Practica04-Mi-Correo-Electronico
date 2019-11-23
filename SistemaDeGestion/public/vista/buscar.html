@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <link type="text/css" rel="stylesheet" href="../../css/estiloresu.css "/>
+ <title>Buscar</title>
+</head>
+
+<body>
+    
+    <form onsubmit="return buscarPorCedula()" action="../controladores/buscar.php">
+        <input type="text" id="motivo" name="motivo" value="">
+        <input type="button" id="buscar" name="buscar" value="Buscar" onclick="buscarPorCedula()">
+       </form>
+       <div id="informacion"><b>Datos de la persona</b></div>
+<script>
+
+function buscarPorCedula() {
+ var motivo = document.getElementById("motivo").value;
+ if (motivo == "") {
+ document.getElementById("informacion").innerHTML = "";
+ } else {
+ if (window.XMLHttpRequest) {
+ // code for IE7+, Firefox, Chrome, Opera, Safari
+ xmlhttp = new XMLHttpRequest();
+ } else {
+ // code for IE6, IE5
+ xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+ }
+ xmlhttp.onreadystatechange = function() {
+ if (this.readyState == 4 && this.status == 200) {
+ document.getElementById("informacion").innerHTML = this.responseText;
+ 
+ }
+ };
+ xmlhttp.open("GET","../controladores/buscar.php?motivo="+motivo,true);
+ xmlhttp.send();
+ }
+ return false;
+}
+</script>
+</body>
+</html>

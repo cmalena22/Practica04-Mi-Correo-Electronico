@@ -1,0 +1,41 @@
+html{
+    margin:0 auto ;
+    width: 40%;
+    max-width: 3050px;
+    min-width:1150px;
+}
+
+body {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 2000px;
+}
+html {  
+    background-color: rgb(222, 224, 228);
+   }  
+  body { 
+    background-color: #EEF5DB; 
+       }
+    
+    table {
+        /* Para asegurarse que todos los labels tienen el mismo tamaño y están alineados correctamente */
+        display: inline-block;
+        width: 500px;
+        text-align: right;
+        margin-left: .5em;
+        padding-left: 10px;
+        border:1px solid black;        
+        border-collapse: separate;
+        border-spacing: 30px 20px;
+    }
+    
+     a{
+      font-family: 'Courier New', Courier, monospace;
+      color: black;
+      }
+      form {   
+        /* Para ver el borde del formulario */
+        padding: 1em;
+       
+        border-radius: 2em;
+    }
