@@ -3,9 +3,14 @@
     <head>     
         <meta charset="UTF-8">     
         <title>Modificar datos de persona </title> 
-        </head> 
-        <body> 
-            <?php         
+    </head> 
+    <body> 
+        <?php     session_start();     
+        if(!isset($_SESSION['isLogged']) || $_SESSION['isLogged'] === FALSE){                 
+        header("Location: /SistemaDeGestion/public/vista/login.html");             
+        } 
+        ?>  
+<?php         
         //incluir conexión a la base de datos     
         include '../../../config/conexionBD.php';  
  
