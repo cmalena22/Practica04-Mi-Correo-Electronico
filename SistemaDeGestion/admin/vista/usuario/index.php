@@ -3,9 +3,18 @@
 <head>
  <meta charset="UTF-8">
  <title>Gestión de usuarios</title>
+ 
+ <link type="text/css" rel="stylesheet" href=" ../../../css/estiloresu.css "/>
+ 
 </head>
 <body>
+<header>
+    <ul>
+    
+    <li><a href="../../../config/cerrar_sesion.php">Cerrar sesion</a></li>
 
+    </ul>
+</header>
  <table style="width:100%">
  <tr>
  <th>Cedula</th>
@@ -16,6 +25,11 @@
  <th>Correo</th>
  <th>Fecha Nacimiento</th>
  </tr>
+ <?php     session_start();     
+if(!isset($_SESSION['isLogged']) || $_SESSION['isLogged'] === FALSE){                 
+    header("Location: /SistemaDeGestion/public/vista/login.html");             
+    } 
+?>
  <?php
  include '../../../config/conexionBD.php';
  $sql = "SELECT * FROM usuario WHERE rol='usuario'";
@@ -35,7 +49,8 @@
  echo "   <td> <a href='eliminar.php?codigo=" . $row['usu_codigo'] . "'>Eliminar</a> </td>";  
  echo "   <td> <a href='modificar.php?codigo=" . $row['usu_codigo'] . "'>Modificar</a> </td>";   
  echo "   <td> <a href='cambiar_contrasena.php?codigo=" . $row['usu_codigo'] . 
- "'>Cambiar contraseña</a> </td>"; 
+ "'>Cambiar contraseña</a> </td>";   
+ 
  echo "</tr>";
  }
  } else {
@@ -75,6 +90,7 @@
  echo " <td>" . $row['reu_longitud'] . "</td>";
  echo " <td>" . $row['reu_motivo'] . "</td>"; 
  echo " <td>" . $row['reu_observaciones'] . "</td>"; 
+ echo "   <td> <a href='eliminarr.php?codigo=" . $row['reu_id'] . "'>Eliminar</a> </td>";  
  echo "</tr>";
  }
  } else {
