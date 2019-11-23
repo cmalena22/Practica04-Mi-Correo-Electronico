@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,7 +23,6 @@
  $contrasena = isset($_POST["contrasena"]) ? trim($_POST["contrasena"]) : null;
  $fechaNacimiento = isset($_POST["fechaNacimiento"]) ? trim($_POST["fechaNacimiento"]): null; 
  
-
  $sql = "INSERT INTO usuario VALUES (0, '$cedula', '$nombre', '$apellido', '$direccion', '$telefono',
 '$correo', '$contrasena', '$fechaNacimiento','usuario')";
  if ($conn->query($sql) === TRUE) {
@@ -34,11 +34,9 @@
  echo "<p class='error'>Error: " . mysqli_error($conn) . "</p>";
  }
  }
-
  //cerrar la base de datos
  $conn->close();
- echo "<a href='../../public/vista/formulario.html '>Regresar</a>";
-
+ echo "<a href='../../public/vista/login.html '>Regresar</a>";
  ?>
 </body>
 </html>
