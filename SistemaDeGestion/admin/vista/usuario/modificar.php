@@ -3,9 +3,16 @@
     <head>     
         <meta charset="UTF-8">     
         <title>Modificar datos de persona</title>     
+        
+ <link type="text/css" rel="stylesheet" href="../../../css/estilos.css "/> 
     </head> 
  
-<body>     
+<body>   
+<?php     session_start();     
+if(!isset($_SESSION['isLogged']) || $_SESSION['isLogged'] === FALSE){                 
+    header("Location: /SistemaDeGestion/public/vista/login.html");             
+    } 
+?>
     <?php         
     $codigo = $_GET["codigo"];         
     $sql = "SELECT * FROM usuario where usu_codigo=$codigo"; 
