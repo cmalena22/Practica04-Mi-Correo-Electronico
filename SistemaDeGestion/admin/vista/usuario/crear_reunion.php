@@ -2,11 +2,8 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link href ="archivo.css" rel="stylesheet"/>
-   
+    <title>Crear Reunion</title>
+    <link type="text/css" rel="stylesheet" href="../../../css/estilos.css "/> 
     <style type="text/css">
       .error {
           color: red;
@@ -28,7 +25,7 @@
 $codigo=$_GET['codigo'];
 ?>
     <article class="about_tss">
-        <h1>Formulario</h1>
+        <h1>Crear reunion</h1>
           <form action="crear_reunionn.php" method="post" onsubmit="return validarCampos()">
             <label for="fecha">Fecha:</label>
             <input type="text" id="fecha" name="fecha" onkeyup="return validarLetras(this);this.value=dosPalabras(this.value)"/>

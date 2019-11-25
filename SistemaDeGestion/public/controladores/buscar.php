@@ -5,6 +5,7 @@
     <title>Buscar</title>
 </head>
 <body>
+    <h1>Buscar por Reunion</h1>
 <?php
  //incluir conexión a la base de datos
  include "../../config/conexionBD.php";

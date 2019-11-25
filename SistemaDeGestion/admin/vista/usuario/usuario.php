@@ -6,7 +6,7 @@
  
  <link type="text/css" rel="stylesheet" href="../../../css/estiloresu.css "/> 
 </head>
-<body>
+<body background="../../../fondo1.jpg" >
 <header>
     <ul>
     

@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <title>Gestión de usuarios</title>
 <a href="../../../config/cerrar_sesion.php">Cerrar sesion</a>
+<link type="text/css" rel="stylesheet" href=" ../../../css/estilos.css "/> 
 <script src="js/"></script> 
 </head>
 

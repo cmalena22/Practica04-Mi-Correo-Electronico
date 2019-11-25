@@ -7,7 +7,7 @@
  <link type="text/css" rel="stylesheet" href=" ../../../css/estiloresu.css "/>
  
 </head>
-<body>
+<body background="../../../fondo.jpg">
 <header>
     <ul>
     
@@ -15,7 +15,7 @@
 
     </ul>
 </header>
- <table style="width:100%">
+ <table  style="width:100%">
  <tr>
  <th>Cedula</th>
  <th>Nombres</th>
